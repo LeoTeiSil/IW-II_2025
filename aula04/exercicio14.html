@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Eletrônico</title>
+</head>
+<body>
+    <script>
+        var valor = parseInt(prompt("Digite o valor para saque:"));
+        var cedulas = [100, 50, 20, 10, 5, 2, 1];
+        var i = 0;
+        
+        while (i < 7) {
+            var qtd = 0;
+            while (valor >= cedulas[i]) {
+                valor -= cedulas[i];
+                qtd++;
+            }
+            if (qtd > 0) {
+                console.log(qtd + " nota(s) de R$ " + cedulas[i]);
+            }
+            i++;
+        }
+    </script>
+</body>
+</html>
