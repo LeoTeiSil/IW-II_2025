@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhação</title>
+</head>
+<body>
+    <script>
+        var numCerto = 3;
+        var palpite = parseInt(prompt("Digite um número:"));
+
+        while (palpite !== numCerto) {
+            if (palpite >= 1 && palpite <= 5) {
+                console.log("Está quente! Tente mais uma vez.");
+            } else {
+                console.log("Está frio! Tente mais uma vez.");
+            }
+            palpite = parseInt(prompt("Digite um número:"));
+        }
+
+        console.log("Parabéns! Você acertou o número " + numCerto);
+    </script>
+</body>
+</html>

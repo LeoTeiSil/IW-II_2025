@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Simples</title>
+</head>
+<body>
+    <script>
+        var usercerto = "Leonardo"; 
+        var senhacerta = "Informatica2025";
+        var usuario, senha;
+
+        usuario = prompt("Digite o nome de usuário:");
+        senha = prompt("Digite a senha:");
+
+        while (usuario !== usercerto || senha !== senhacerta) {
+            console.log("Usuário ou senha incorretos. Tente novamente.");
+
+            usuario = prompt("Digite o nome de usuário:");
+            senha = prompt("Digite a senha:");
+        }
+
+        console.log("Login bem-sucedido!");
+    </script>
+</body>
+</html>

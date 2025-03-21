@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contagem Regressiva</title>
 </head>
 <body>
     <script>
-        var inicio = parseInt(prompt("Digite o começo do seu cronomêtro: "));
-        let num = inicio;
-        while (num<= final) {
-            console.log(num);
-            num++;            
+        var num = prompt("Digite um número para a contagem regressiva:"); 
+        while (num >= 0) {
+            console.log(num); 
+            num--;
         }
     </script>
 </body>

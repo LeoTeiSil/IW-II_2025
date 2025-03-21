@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação de Nota</title>
+</head>
+<body>
+    <script>
+        var nota = parseFloat(prompt("Digite uma nota de 0 a 10:"));
+
+        while (nota < 0 || nota > 10) {
+            console.log("Nota inválida!");
+            nota = parseFloat(prompt("Digite uma nota de 0 a 10:"));
+        }
+
+        console.log("Nota aceita: " + nota);
+    </script>
+</body>
+</html>

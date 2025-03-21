@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soma de Números Positivos</title>
+</head>
+<body>
+    <script>
+        var soma = 0;
+        var num = parseFloat(prompt("Digite um número (ou um número negativo para parar):"));
+
+        while (num >= 0) {
+            soma += num;
+            console.log("Soma atual: " + soma);
+            num = parseFloat(prompt("Digite outro número (ou um número negativo para parar):"));
+        }
+
+        console.log("A soma final: " + soma);
+    </script>
+</body>
+</html>
