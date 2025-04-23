@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+    }
+    img {
+    width: 200px;
+    margin-bottom: 20px;
+    }
+    button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    }
+    #ligar {
+    background-color: #28a745;
+    color: white;
+    }
+    #desligar {
+    background-color: #dc3545;
+    color: white;
+    }
