@@ -56,18 +56,15 @@
             var resul = document.getElementById("resultado");
             var dividir = n1 / n2;
 
-            if(n2 == 0){
-                resultado.innerHTML = "Não é possível dividir por 0"
-            }else{
+            if (n2 == 0){
+                resultado.innerHTML = "<b style='color:red'> NÃO É PERMITIDA DIV POR ZERO</b>";  
+            }
+            else{
                 let dividir = n1 / n2;
-                resultado.innerHTML == dividir;
-            };
-        
-
-
+                resultado.innerHTML = dividir; 
 
             resul.innerHTML = dividir;
-        }
+        }}
 
         function limpar(){
             document.getElementById("num1").value = "";
