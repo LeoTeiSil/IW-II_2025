@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="num1" placeholder="Número 01">
+    <input type="number" id="num2" placeholder="Número 02">
+    <button id="btn_somar" onclick="somar()">Somar</button>
+    <button id="btn_subtrair" onclick="subtrair()">Subtrair</button>
+    <button id="btn_multiplicar" onclick="multiplicar()">Multiplicar</button>
+     <button id="btn_dividir" onclick="dividir()">Dividir</button>
+
+    <button id="btn" onclick="limpar()">Limpar</button>
+
+    <hr>
+    <p>O resultado é : <span id="resultado"></span></p>
+
+    <script>
+        function somar(){
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var resul = document.getElementById("resultado");
+            var soma = n1+ n2;
+
+            // alert("Num1 = " + n1 + "\n" + "Num1 = " + n2 + "\n" +
+            //     "Soma = " + soma);
+            resul.innerHTML = soma;
+        }
+
+        function subtrair(){
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var resul = document.getElementById("resultado");
+            var subtrair = n1 - n2;
+
+
+            resul.innerHTML = subtrair;
+        }
+
+        function multiplicar(){
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var resul = document.getElementById("resultado");
+            var multiplicar = n1 * n2;
+
+
+            resul.innerHTML = multiplicar;
+        }
+
+        function dividir(){
+            var n1 = parseInt(document.getElementById("num1").value);
+            var n2 = parseInt(document.getElementById("num2").value);
+            var resul = document.getElementById("resultado");
+            var dividir = n1 / n2;
+
+            if(n1 == 0 && n2 == 0)
+                console.log("valor é 0")
+
+
+
+            resul.innerHTML = dividir;
+        }
+
+        function limpar(){
+            document.getElementById("num1").value = "";
+            document.getElementById("num2").value = "";
+            document.getElementById("resultado"). innerHTML = ""
+        }
+    </script>
+</body>
+</html>
