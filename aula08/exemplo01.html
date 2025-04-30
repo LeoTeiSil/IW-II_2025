@@ -56,8 +56,13 @@
             var resul = document.getElementById("resultado");
             var dividir = n1 / n2;
 
-            if(n1 == 0 && n2 == 0)
-                console.log("valor é 0")
+            if(n2 == 0){
+                resultado.innerHTML = "Não é possível dividir por 0"
+            }else{
+                let dividir = n1 / n2;
+                resultado.innerHTML == dividir;
+            };
+        
 
 
 
