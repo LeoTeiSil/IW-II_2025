@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Exercício 14</title>
+ <script>
+ function mouseEmCima(imagem){
+ imagem.src ='img/noite.jpg';
+ }
+ function mouseFora(imagem){
+ imagem.src = 'img/dia.jpg';
+ }
+ </script>
+</head>
+<body>
+ Passe o mouse sobre a imagem: <br><br>
+ <img src="img/dia.jpg" onclick="mouseEmCima(this)" width="300" height="300"><br><br>
+
+ <!--
+ width="300" height="300" : dentro da tag img src
+ onclick="mouseEmCima(this)"
+ onMouseOver="mouseEmCima(this)"
+ -->
+</body>
+</html>
