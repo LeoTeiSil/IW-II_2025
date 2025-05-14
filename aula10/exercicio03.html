@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="caixa" placeholder="Digite algo" onkeyup="mostrar()">
+    <button id="botao">Prosseguir</button>
+    <br>
+    <p>Aqui aparecerá algo -> <span id="texto"></span></p>
+
+    <script>
+        var valor = document.getElementById('caixa');
+        var texto = document.getElementById('botao');
+
+        var textantigo = ""
+        function mostrar(){
+            var novo = valor.value;
+            if (novo != textantigo){
+                alert(novo);
+                textantigo = novo;
+            }
+
+            // var letra = caixa.value;
+            // texto.innerHTML = letra;
+        }
+    </script>
+</body>
+</html>

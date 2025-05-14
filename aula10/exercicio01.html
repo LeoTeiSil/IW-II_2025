@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="caixa" placeholder="Digite algo" onkeyup="mostrar()">
+    <br>
+    <p>Aqui aparecerá algo -> <span id="texto"></span></p>
+
+    <script>
+        var caixa = document.getElementById('caixa');
+        var texto = document.getElementById('texto');
+
+        function mostrar(){
+            var letra = caixa.value;
+            texto.innerHTML = letra;
+            // console.log(letra);
+        }
+    </script>
+</body>
+</html>
